@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>INFORET</title>
+</head>
+
+<body>
+  <section class="front-page">
+    <img class="hero" src="./assets/wallp.jpg" alt="meditation" />
+    <nav>
+      <div class="links">
+        <a href="#">our story</a>
+        <a href="#">practice</a>
+        <a href="#">classes</a>
+      </div>
+      <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
+        <line class="line" y1="9" x2="27" y2="9" stroke="white" stroke-width="2" />
+        <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
+      </svg>
+    </nav>
+    <div class="selling-point">
+      <h1>INFORMATION RETRIEVAL</h1>
+      <div class="search-container">
+        <input type="text" placeholder="Enter search term" id="search-box" />
+        <button type="button" onclick="search()">Search</button>
+      </div>
+      <div id="output"></div>
+    </div>
+  </section>
+  <section class="classes">
+    <div class="classes-description">
+      <h2>Searches tailored for you</h2>
+    </div>
+    <div class="videos">
+      <div class="pilates">
+        <h3>Pilates</h3>
+        <video muted loop class="video" src="./assets/pilates.mp4"></video>
+      </div>
+      <div class="yoga">
+        <h3>Yoga</h3>
+        <video muted loop class="video" src="./assets/yoga.mp4"></video>
+      </div>
+      <div class="meditation">
+        <h3>Meditation</h3>
+        <video muted loop class="video" src="./assets/meditation.mp4"></video>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="our-story">
+      <h2>Our story...</h2>
+      <p>
+        We aim to develop a website that makes use of Information Retrieval to find the best-suited article according to
+        the search query given by the user. We plan to rank the articles on the web using the BM25 algorithm. In
+        information retrieval, BM25 is a ranking function used by search engines to estimate the relevance of documents
+        to a given search query.
+      </p>
+    </div>
+    <img src="./assets/our-story.png" alt="our-story" />
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+    integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+    integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
